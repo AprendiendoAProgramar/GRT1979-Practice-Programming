@@ -21,14 +21,3 @@ For `param1 = 1` and `param2 = 2`, the output should be
 * **[output] integer**
 
   The sum of the two inputs.
-
-## [JavaScript (ES6)] Syntax Tips
-
-```javascript
-// Prints help message to the console
-// Returns a string
-function helloWorld(name) {
-    console.log("This prints to the console when you Run Tests");
-    return "Hello, " + name;
-}
-```

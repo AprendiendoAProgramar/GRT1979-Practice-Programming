@@ -20,14 +20,3 @@ Given a year, return the century it is in. The first century spans from the year
 * **[output] integer**
 
   The number of the century the year is in.
-
-## [JavaScript (ES6)] Syntax Tips
-
-```javascript
-// Prints help message to the console
-// Returns a string
-function helloWorld(name) {
-    console.log("This prints to the console when you Run Tests");
-    return "Hello, " + name;
-}
-```
