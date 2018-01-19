@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCAZW8OvQ4-P_oBpGstQ94vmg5dvDP2gP4",
+    authDomain: "consumos-test.firebaseapp.com",
+    databaseURL: "https://consumos-test.firebaseio.com",
+    projectId: "consumos-test",
+    storageBucket: "",
+    messagingSenderId: "10193195274"
+  };
+  firebase.initializeApp(config);
+</script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_8769845658304a3d8c918e7c1961cb12 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8769845658304a3d8c918e7c1961cb12" ></div>
+
+        
+</body>
+
+
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_8769845658304a3d8c918e7c1961cb12 = L.map(
+                                  'map_8769845658304a3d8c918e7c1961cb12',
+                                  {center: [41.68,2.8],
+                                  zoom: 15,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_9908387eb696479f87b5a34d632a0494 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_8769845658304a3d8c918e7c1961cb12);
+        
+    
+            var feature_group_cd8269c122d04051ac5df774620e7187 = L.featureGroup(
+                ).addTo(map_8769845658304a3d8c918e7c1961cb12);
+        
+    
+
+            var marker_8d60ef16d0ec4c23af1f96cf9ad24474 = L.marker(
+                [41.672381,2.789828],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_cd8269c122d04051ac5df774620e7187);
+            
+    
+
+                var icon_e767389146b148cdb64f2b365cf94f72 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8d60ef16d0ec4c23af1f96cf9ad24474.setIcon(icon_e767389146b148cdb64f2b365cf94f72);
+            
+    
+            var popup_42692ba37a944675a084eda74800f090 = L.popup({maxWidth: '300'});
+
+            
+                var html_053e34efd79d419984e0ce6d3d835f64 = $('<div id="html_053e34efd79d419984e0ce6d3d835f64" style="width: 100.0%; height: 100.0%;">Cliente_A= 50 kW</div>')[0];
+                popup_42692ba37a944675a084eda74800f090.setContent(html_053e34efd79d419984e0ce6d3d835f64);
+            
+
+            marker_8d60ef16d0ec4c23af1f96cf9ad24474.bindPopup(popup_42692ba37a944675a084eda74800f090);
+
+            
+        
+    
+
+            var marker_49c66b0fd7f3481892db72df2053405b = L.marker(
+                [41.672677,2.790504],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_cd8269c122d04051ac5df774620e7187);
+            
+    
+
+                var icon_64bf7e5102fe493bb52a45dba1fcaffd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_49c66b0fd7f3481892db72df2053405b.setIcon(icon_64bf7e5102fe493bb52a45dba1fcaffd);
+            
+    
+            var popup_7c49c556c50a4316bda691e958c22d1b = L.popup({maxWidth: '300'});
+
+            
+                var html_2d538732edf34cecacfd39286cca9108 = $('<div id="html_2d538732edf34cecacfd39286cca9108" style="width: 100.0%; height: 100.0%;">Cliente_B= 100 kW</div>')[0];
+                popup_7c49c556c50a4316bda691e958c22d1b.setContent(html_2d538732edf34cecacfd39286cca9108);
+            
+
+            marker_49c66b0fd7f3481892db72df2053405b.bindPopup(popup_7c49c556c50a4316bda691e958c22d1b);
+
+            
+        
+    
+
+            var marker_8f8e02fe97464514a20165116e4d6130 = L.marker(
+                [41.672998,2.79088],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_cd8269c122d04051ac5df774620e7187);
+            
+    
+
+                var icon_610c599bf04e4a46bafbae7df21b1d22 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8f8e02fe97464514a20165116e4d6130.setIcon(icon_610c599bf04e4a46bafbae7df21b1d22);
+            
+    
+            var popup_174a3652e34d4d56825a2bb4e424cd94 = L.popup({maxWidth: '300'});
+
+            
+                var html_40483008a44349038ed0eb83a05fa037 = $('<div id="html_40483008a44349038ed0eb83a05fa037" style="width: 100.0%; height: 100.0%;">Cliente_C= 200 kW</div>')[0];
+                popup_174a3652e34d4d56825a2bb4e424cd94.setContent(html_40483008a44349038ed0eb83a05fa037);
+            
+
+            marker_8f8e02fe97464514a20165116e4d6130.bindPopup(popup_174a3652e34d4d56825a2bb4e424cd94);
+
+            
+        
+    
+
+            var marker_448aa01f67eb4736a480f22682ffbe3d = L.marker(
+                [41.673198,2.79108],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_cd8269c122d04051ac5df774620e7187);
+            
+    
+
+                var icon_97b1dbbecf284fe4811d240e8dde4cdd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_448aa01f67eb4736a480f22682ffbe3d.setIcon(icon_97b1dbbecf284fe4811d240e8dde4cdd);
+            
+    
+            var popup_daa34dcdbd5a421095729978e3e535fb = L.popup({maxWidth: '300'});
+
+            
+                var html_f4560425d2314a3388e67c35eb1198ad = $('<div id="html_f4560425d2314a3388e67c35eb1198ad" style="width: 100.0%; height: 100.0%;">Cliente_D= 10 kW</div>')[0];
+                popup_daa34dcdbd5a421095729978e3e535fb.setContent(html_f4560425d2314a3388e67c35eb1198ad);
+            
+
+            marker_448aa01f67eb4736a480f22682ffbe3d.bindPopup(popup_daa34dcdbd5a421095729978e3e535fb);
+
+            
+        
+    
+
+            var marker_9eb6a36c05374da69da91d0021ba3f98 = L.marker(
+                [41.673398,2.79128],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_cd8269c122d04051ac5df774620e7187);
+            
+    
+
+                var icon_9a44ccd0769c44008e4ad9e67077848f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9eb6a36c05374da69da91d0021ba3f98.setIcon(icon_9a44ccd0769c44008e4ad9e67077848f);
+            
+    
+            var popup_8f9c6fe4017b41d6b916189127fcc876 = L.popup({maxWidth: '300'});
+
+            
+                var html_e83965d46a834a2299bb9ffee555398f = $('<div id="html_e83965d46a834a2299bb9ffee555398f" style="width: 100.0%; height: 100.0%;">Cliente_E= 125 kW</div>')[0];
+                popup_8f9c6fe4017b41d6b916189127fcc876.setContent(html_e83965d46a834a2299bb9ffee555398f);
+            
+
+            marker_9eb6a36c05374da69da91d0021ba3f98.bindPopup(popup_8f9c6fe4017b41d6b916189127fcc876);
+
+            
+        
+    
+
+            var marker_bd178f872fb24c8a9bc07af4936d13c2 = L.marker(
+                [41.673798,2.79148],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_cd8269c122d04051ac5df774620e7187);
+            
+    
+
+                var icon_e882aa927a334f238f4c9f4dc3bd9c5f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bd178f872fb24c8a9bc07af4936d13c2.setIcon(icon_e882aa927a334f238f4c9f4dc3bd9c5f);
+            
+    
+            var popup_3186724f0bda40ae8badbbcb8c6554ff = L.popup({maxWidth: '300'});
+
+            
+                var html_f060b5ae9e5b43629e16250b8401cc6a = $('<div id="html_f060b5ae9e5b43629e16250b8401cc6a" style="width: 100.0%; height: 100.0%;">Cliente_F= 300 kW</div>')[0];
+                popup_3186724f0bda40ae8badbbcb8c6554ff.setContent(html_f060b5ae9e5b43629e16250b8401cc6a);
+            
+
+            marker_bd178f872fb24c8a9bc07af4936d13c2.bindPopup(popup_3186724f0bda40ae8badbbcb8c6554ff);
+
+            
+        
+    
+
+            var marker_3487c20899634a4aa526c65ea682334f = L.marker(
+                [41.674398,2.79168],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_cd8269c122d04051ac5df774620e7187);
+            
+    
+
+                var icon_ba119b0bb942435c861aa9094a979f21 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3487c20899634a4aa526c65ea682334f.setIcon(icon_ba119b0bb942435c861aa9094a979f21);
+            
+    
+            var popup_f14d7fb85e314387a7fa09330d53aa3d = L.popup({maxWidth: '300'});
+
+            
+                var html_a758724786a54589b005e4b1cef18d87 = $('<div id="html_a758724786a54589b005e4b1cef18d87" style="width: 100.0%; height: 100.0%;">Cliente_G= 20 kW</div>')[0];
+                popup_f14d7fb85e314387a7fa09330d53aa3d.setContent(html_a758724786a54589b005e4b1cef18d87);
+            
+
+            marker_3487c20899634a4aa526c65ea682334f.bindPopup(popup_f14d7fb85e314387a7fa09330d53aa3d);
+
+            
+        
+    
+            var layer_control_b0f9f6b85d2646e0b511b73cfaf8cf17 = {
+                base_layers : { "openstreetmap" : tile_layer_9908387eb696479f87b5a34d632a0494, },
+                overlays : { "Consumos" : feature_group_cd8269c122d04051ac5df774620e7187, }
+                };
+            L.control.layers(
+                layer_control_b0f9f6b85d2646e0b511b73cfaf8cf17.base_layers,
+                layer_control_b0f9f6b85d2646e0b511b73cfaf8cf17.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_8769845658304a3d8c918e7c1961cb12);
+        
+</script>
